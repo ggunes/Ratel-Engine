@@ -1,0 +1,10 @@
+^C:\USERS\GURKA\DESKTOP\RATEL_ENGINE\BUILD\CMAKEFILES\BBD82FF21B394E0396D0DF550997B60A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/gurka/Desktop/Ratel_Engine -BC:/Users/gurka/Desktop/Ratel_Engine/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/gurka/Desktop/Ratel_Engine/build/RatelEngine.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
